@@ -1,0 +1,47 @@
+.NavBar {
+    position: fixed;
+    display: block;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99; /* should be top most element */
+    border-bottom: 1px solid #eee;
+}
+  
+.NavBarList {
+    list-style: none;
+    margin-bottom: 0;
+}
+  
+.NavBarItem {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    display: list-item;
+}
+  
+  .NavBarLink {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222;
+  }
+  
+  .Popover {
+    display: none;
+    position: absolute;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    top: 92%;
+    left: -50%;
+    filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+  }
+
+.NavBarHome {
+    text-decoration: none;
+    color: #222;   
+}
