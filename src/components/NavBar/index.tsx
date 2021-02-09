@@ -1,29 +1,34 @@
 // import {useState} from 'react'
 
-import styles from './index.module.scss'
-import appStyles from '../../App.module.scss'
+import styles from './index.module.scss';
+import appStyles from '../../App.module.scss';
 
-import {
-    Link
-  } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
-    // TODO set state for active
-    // let [popoverState, setPopoverState] = useState({Code: false, })
-    return ( <div className={styles.NavBar}>
-        <div className={appStyles.container}>
-            <Link className={styles.NavBarHome} to="/">
-                <h1>FinanceManager</h1>
-            </Link>
+  // TODO set state for active
+  // let [popoverState, setPopoverState] = useState({Code: false, })
+  return (
+    <div className={styles.NavBar}>
+      <div className={appStyles.container}>
+        <Link className={styles.NavBarHome} to="/">
+          <h1>FinanceManager</h1>
+        </Link>
         <ul className={styles.NavBarList}>
-            <li className={styles.NavBarItem}>
-                <Link to='/accounts' className={styles.NavBarLink}>Accounts</Link>
-            </li>
-            <li className={styles.NavBarItem}>
-                <Link to='/manage' className={styles.NavBarLink}>Manage</Link>
-            </li>
           <li className={styles.NavBarItem}>
-            <Link to='/settings' className={styles.NavBarLink}>Settings</Link>
+            <Link to="/accounts" className={styles.NavBarLink}>
+              Accounts
+            </Link>
+          </li>
+          <li className={styles.NavBarItem}>
+            <Link to="/manage" className={styles.NavBarLink}>
+              Manage
+            </Link>
+          </li>
+          <li className={styles.NavBarItem}>
+            <Link to="/settings" className={styles.NavBarLink}>
+              Settings
+            </Link>
             {/* <div id="moreNavPopover" className={styles.Popover}>
               <ul className={styles.PopoverList}>
                 <li className={styles.PopoverItem}>
@@ -48,6 +53,7 @@ export default function NavBar() {
             </div> */}
           </li>
         </ul>
-        </div>
-      </div>)
+      </div>
+    </div>
+  );
 }
